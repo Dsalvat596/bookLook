@@ -1,0 +1,19 @@
+.title {
+    padding-bottom: 5px;
+    margin-bottom: 25px;
+    border-bottom: 1px dotted gray;
+}
+
+input {
+    margin-top: 5px;
+    margin-bottom: 11px;
+}
+
+.searchHeader {
+    font-weight: bold;
+}
+
+#date{
+    font-style: italic;
+    font-size: 18px;
+}

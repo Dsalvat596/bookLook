@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="style.css">
+    <title>BookLook</title>
+</head>
+
+<body>
+    <div class="col-lg-4" id="header">
+        <h1 class="title">BookLook
+            <i class="fa fa-eye"></i>
+        </h1>
+    </div>
+<script id="book-template" type="text/x-handlebars-template">
+    <h2 class="book-title">{{title}}</h2>
+    <h3 class="book-author">by {{author}}</h3>
+    <img src='{{image}}'>
+    <h4 class="book-dscr">{{description}} <span id="date">({{date}})</span></h4>
+</script>
+
+    <div class="body-container col-lg-4">
+        <h3 class="searchHeader">Search by ISBN</h3>
+        <input type="text" class="form-control searchISBN" placeholder="ISBN Number">
+        <button type="input" class="btn btn-primary searchbtn">Search</button>
+    </div>
+
+    <script src="node_modules/handlebars/dist/handlebars.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
